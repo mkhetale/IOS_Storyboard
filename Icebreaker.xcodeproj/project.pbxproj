@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		046A6BC125EE0B1800A79844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046A6BBF25EE0B1800A79844 /* Main.storyboard */; };
 		046A6BC325EE0B1B00A79844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046A6BC225EE0B1B00A79844 /* Assets.xcassets */; };
 		046A6BC625EE0B1B00A79844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046A6BC425EE0B1B00A79844 /* LaunchScreen.storyboard */; };
+		046A6BCF25EE1C3500A79844 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046A6BCE25EE1C3500A79844 /* GoogleService-Info.plist */; };
+		046A6BE325EE298900A79844 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A6BE225EE298900A79844 /* Question.swift */; };
+		A26E9F3F0948AB77608BE5A7 /* Pods_Icebreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D236D674A0B4CE48591AA4C /* Pods_Icebreaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		046A6BC225EE0B1B00A79844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046A6BC525EE0B1B00A79844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046A6BC725EE0B1B00A79844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046A6BCE25EE1C3500A79844 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		046A6BE225EE298900A79844 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		31FB7ADBE22E94BEB8221AB6 /* Pods-Icebreaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Icebreaker.debug.xcconfig"; path = "Target Support Files/Pods-Icebreaker/Pods-Icebreaker.debug.xcconfig"; sourceTree = "<group>"; };
+		5DEC3CF449DAE74DA62C22DF /* Pods-Icebreaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Icebreaker.release.xcconfig"; path = "Target Support Files/Pods-Icebreaker/Pods-Icebreaker.release.xcconfig"; sourceTree = "<group>"; };
+		8D236D674A0B4CE48591AA4C /* Pods_Icebreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Icebreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26E9F3F0948AB77608BE5A7 /* Pods_Icebreaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				046A6BB825EE0B1800A79844 /* Icebreaker */,
 				046A6BB725EE0B1800A79844 /* Products */,
+				942DF7D6D7F22D128B8652D0 /* Pods */,
+				6206F8A483C956479C3B02FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +73,28 @@
 				046A6BBF25EE0B1800A79844 /* Main.storyboard */,
 				046A6BC225EE0B1B00A79844 /* Assets.xcassets */,
 				046A6BC425EE0B1B00A79844 /* LaunchScreen.storyboard */,
+				046A6BCE25EE1C3500A79844 /* GoogleService-Info.plist */,
 				046A6BC725EE0B1B00A79844 /* Info.plist */,
+				046A6BE225EE298900A79844 /* Question.swift */,
 			);
 			path = Icebreaker;
+			sourceTree = "<group>";
+		};
+		6206F8A483C956479C3B02FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D236D674A0B4CE48591AA4C /* Pods_Icebreaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		942DF7D6D7F22D128B8652D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31FB7ADBE22E94BEB8221AB6 /* Pods-Icebreaker.debug.xcconfig */,
+				5DEC3CF449DAE74DA62C22DF /* Pods-Icebreaker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046A6BCA25EE0B1B00A79844 /* Build configuration list for PBXNativeTarget "Icebreaker" */;
 			buildPhases = (
+				86F030A31BC19C4F2BE865A6 /* [CP] Check Pods Manifest.lock */,
 				046A6BB225EE0B1800A79844 /* Sources */,
 				046A6BB325EE0B1800A79844 /* Frameworks */,
 				046A6BB425EE0B1800A79844 /* Resources */,
+				8A492D564769BA3EB6CC3D92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046A6BC625EE0B1B00A79844 /* LaunchScreen.storyboard in Resources */,
+				046A6BCF25EE1C3500A79844 /* GoogleService-Info.plist in Resources */,
 				046A6BC325EE0B1B00A79844 /* Assets.xcassets in Resources */,
 				046A6BC125EE0B1800A79844 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86F030A31BC19C4F2BE865A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Icebreaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A492D564769BA3EB6CC3D92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Icebreaker/Pods-Icebreaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Icebreaker/Pods-Icebreaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Icebreaker/Pods-Icebreaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046A6BB225EE0B1800A79844 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				046A6BBE25EE0B1800A79844 /* ViewController.swift in Sources */,
+				046A6BE325EE298900A79844 /* Question.swift in Sources */,
 				046A6BBA25EE0B1800A79844 /* AppDelegate.swift in Sources */,
 				046A6BBC25EE0B1800A79844 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +359,7 @@
 		};
 		046A6BCB25EE0B1B00A79844 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FB7ADBE22E94BEB8221AB6 /* Pods-Icebreaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		046A6BCC25EE0B1B00A79844 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEC3CF449DAE74DA62C22DF /* Pods-Icebreaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
